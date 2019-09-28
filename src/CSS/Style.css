@@ -12,6 +12,10 @@
     width: 50%;
 }
 
+.tabs{
+    font-size: 28px;
+}
+
 .row:after{
     align-content: center;
     content: "";
