@@ -1,0 +1,20 @@
+.header{
+    text-align: center;
+}
+
+.bank{
+    align-content: center;
+}
+
+.column{
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+
+.row:after{
+    align-content: center;
+    content: "";
+    display: table;
+    clear: both;
+}
