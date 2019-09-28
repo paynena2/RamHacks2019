@@ -12,12 +12,16 @@
     width: 50%;
 }
 
+.container{
+    height: 75%;
+}
+
 .details{
     text-align: center;
 }
 
 .tabs{
-    font-size: 28px;
+    font-size: 64px;
 }
 
 .row:after{
@@ -25,4 +29,5 @@
     content: "";
     display: table;
     clear: both;
+    height: 75%;
 }
