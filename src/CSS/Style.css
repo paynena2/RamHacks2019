@@ -1,5 +1,6 @@
 .header{
     text-align: center;
+    font-size: 4vw;
 }
 
 .bank{
@@ -10,18 +11,42 @@
     float: left;
     text-align: center;
     width: 50%;
+    height: auto;
 }
 
 .container{
-    height: 75%;
+    height: 50vw;
 }
 
 .details{
     text-align: center;
+    font-size: 3vw;
+}
+
+.numbers{
+    color: limegreen;
+}
+
+.numbers2{
+    color: red;
+}
+
+.numbers3{
+    color: gold;
+}
+
+.numbers4{
+    color: blue;
 }
 
 .tabs{
-    font-size: 64px;
+    font-size: 5vw;
+
+}
+
+.row{
+    height: 33%;
+    height: auto;
 }
 
 .row:after{
@@ -29,5 +54,4 @@
     content: "";
     display: table;
     clear: both;
-    height: 75%;
 }
