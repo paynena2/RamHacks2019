@@ -40,6 +40,7 @@ function populateTransactions(){
 
 
 
+
 function setHTML(deposits, withdrawals, bills, transfers){
     document.getElementById("deposit_num").innerHTML = "$" + deposits
     document.getElementById("with_num").innerHTML = "$" + withdrawals
@@ -53,8 +54,7 @@ let bills = 2798
 let transfers = 5300
 setHTML(deposits, withdrawals, bills, transfers)
 
-
-var mysql = require('mysql')
+let mysql = require('mysql')
 
 var con = mysql.createConnection({
   host: "hackathon.crfggblwxxhg.us-east-1.rds.amazonaws.com",
@@ -63,5 +63,12 @@ var con = mysql.createConnection({
   database: "Hackathondb"
 })
 
+con.connect(function(err) {
+  if (err) {
+    return console.error('error: ' + err.message);
+  }
+ 
+  console.log('Connected to the MySQL server.');
+});
 
 populateDeposits();

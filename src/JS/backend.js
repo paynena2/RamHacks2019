@@ -1,4 +1,4 @@
-var mysql = require('mysql');
+var mysql = require('node_modules/mysql');
 
 var con = mysql.createConnection({
   host: "hackathon.crfggblwxxhg.us-east-1.rds.amazonaws.com",
@@ -8,10 +8,10 @@ var con = mysql.createConnection({
 });
 
 con.connect(function(err) {
-  //if (err) throw err;
-  con.query("SELECT id, date, amount, payee-id, status FROM Depositstb", function (err, result, fields) {
-    //if (err) throw err;
-    console.log(result);
-  });
+  if (err) {
+    return console.error('error: ' + err.message);
+  }
+ 
+  console.log('Connected to the MySQL server.');
 });
 
