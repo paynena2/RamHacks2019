@@ -7,20 +7,42 @@
     align-content: center;
 }
 
-.column{
-    float: left;
-    text-align: center;
-    width: 50%;
+img{
+    width: 100%;
     height: auto;
 }
 
+.column{
+    float: left;
+    text-align: center;
+    width: 43%;
+    height: auto;
+    margin: auto;
+}
+
 .container{
-    height: 50vw;
+    height: 100%;
 }
 
 .details{
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5vw;
+}
+
+.money_image{
+    width: 100%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+}
+
+.image_container{
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .numbers{
@@ -45,8 +67,8 @@
 }
 
 .row{
-    height: 33%;
-    height: auto;
+    height: 50%;
+    margin: auto;
 }
 
 .row:after{
