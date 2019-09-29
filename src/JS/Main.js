@@ -40,19 +40,20 @@ function populateTransactions(){
 
 
 
-function setHTML(deposits, withdrawals, bills, transfers, merchants, loans){
+function setHTML(deposits, withdrawals, bills, transfers){
     document.getElementById("deposit_num").innerHTML = "$" + deposits
     document.getElementById("with_num").innerHTML = "$" + withdrawals
     document.getElementById("bills_num").innerHTML = "$" + bills
     document.getElementById("transfer_num").innerHTML = "$" + transfers
 }
 
-let deposits = 0
-let withdrawals = 0
-let bills = 0
-let transfers = 0
-let merchants = 0
-let loans = 0
+let deposits = 57000
+let withdrawals = 4300
+let bills = 2798
+let transfers = 5300
+setHTML(deposits, withdrawals, bills, transfers)
+
+
 var mysql = require('mysql')
 
 var con = mysql.createConnection({
@@ -63,6 +64,4 @@ var con = mysql.createConnection({
 })
 
 
-
 populateDeposits();
-setHTML(deposits, withdrawals, bills, transfers, merchants, loans)
